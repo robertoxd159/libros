@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Filtrando elementos por categorias</title>
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	
+	<div class="wrap">
+		<h1>Escoge un producto</h1>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">Todo</a>
+				<a href="#" class="category_item" category="ordenadores">Ordenadores</a>
+				<a href="#" class="category_item" category="laptops">Laptops</a>
+				<a href="#" class="category_item" category="smartphones">Smartphones</a>
+				<a href="#" class="category_item" category="monitores">Monitores</a>
+				<a href="#" class="category_item" category="audifonos">Audifonos</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="laptops">
+					<a href="https://drive.google.com/drive/folders/1HTfnrUgBdw_e8_ebhnpaLs7jb9h88Rvo?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://img.europapress.es/fotoweb/fotonoticia_20170604112334_1200.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HTfnrUgBdw_e8_ebhnpaLs7jb9h88Rvo?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Harry Potter Saga</a>
+				</div>
+				<div class="product-item" category="laptops">
+					<a href="https://drive.google.com/drive/folders/1pN8ZF8FRVcLJyyyNpnL7JKqAspqV7Slr?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4_jG4YEe6phFjaQIkXL_HyjczUD2hlce7w&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pN8ZF8FRVcLJyyyNpnL7JKqAspqV7Slr?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">50 Sombras de Grey</a>
+				</div>
+				<div class="product-item" category="smartphones">
+					<a href="https://drive.google.com/drive/folders/1qGHuA-ovFSJxxjUJDUcQM7wf-hOyEZsK?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://www.24-horas.mx/wp-content/uploads/2021/01/sagaVillanos.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1qGHuA-ovFSJxxjUJDUcQM7wf-hOyEZsK?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Villanos</a>
+				</div>
+				<div class="product-item" category="smartphones">
+					<a href="https://drive.google.com/drive/folders/1qUtcToR58HOYWSJUmDn9BInCCRRacXBi?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://http2.mlstatic.com/D_NQ_NP_944282-MLA70533132261_072023-O.webp" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1qUtcToR58HOYWSJUmDn9BInCCRRacXBi?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Unidos por la Magia</a>
+				</div>
+				<div class="product-item" category="ordenadores">
+					<a href="https://drive.google.com/drive/folders/1sy5EnNgxbxd5HQ8gKYI3a5OJlG_phHQD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://es.web.img3.acsta.net/r_1280_720/newsv7/22/09/28/11/30/3126134.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1sy5EnNgxbxd5HQ8gKYI3a5OJlG_phHQD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Un Giro Inesperado</a>
+				</div>
+				<div class="product-item" category="ordenadores">
+					<a href="https://drive.google.com/drive/folders/1CzBjHbMqoJu0rBnmgAdpr3EBtXv8uULB?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0LPUsarcGTCrVsuqgOPfdqgbc2UPjfY9v4w&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1CzBjHbMqoJu0rBnmgAdpr3EBtXv8uULB?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" class="loco">Un Corazon Valiente</a>
+				</div>
+				<div class="product-item" category="monitores">
+					<a href="https://drive.google.com/drive/folders/1pkB4yADZ6vEDpg_GBMQ7VZyou6wWF0sP?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT98Ea7XDyVvWyhhWuZoIC9jtNnswIxyvC0wg&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pkB4yADZ6vEDpg_GBMQ7VZyou6wWF0sP?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trono de Cristal</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17gjpO3qrOUFAjPIorHIKNFeuojDy2V4m?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgiDx6rIc4D3qO5MFlCUeD5ErcCfy3tbqKRw&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17gjpO3qrOUFAjPIorHIKNFeuojDy2V4m?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Un destino de irá y fuego ❤️‍🔥</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Cw6Dk4r1girFgFuJiTzaUYiv267Vem2w?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://64.media.tumblr.com/9d1aaa31c8c5fb4b6366355154159a3e/bff4037e6082b071-f4/s1280x1920/0fc3e70be759bca1fe755a3404825fd73137b168.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Cw6Dk4r1girFgFuJiTzaUYiv267Vem2w?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Manacle</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1IX-dxnnOFAmYrs9Z6fTQ6rESMmzYiGvD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://bookslandingweb.com/wp-content/uploads/2022/11/KKK164.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1IX-dxnnOFAmYrs9Z6fTQ6rESMmzYiGvD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Fuego.🔥</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1HqKc-nxVDkFhANw_9p6DtbQmfBNFzyRh?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/51X+9fLk8XL._CLa%7C610%2C500%7C51Y7mP7JehL.jpg%2C51wLiBK8nZL.jpg%7C0%2C0%2C277%2C500%2B333%2C0%2C277%2C500%2B138%2C0%2C333%2C500__SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HqKc-nxVDkFhANw_9p6DtbQmfBNFzyRh?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: El libro de azrael</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/14qPupPLpBYqjoTS_LwDyqBSxxAfWYdam?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://pbs.twimg.com/media/GNKnKkaWIAAg9aR?format=jpg&name=large" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/14qPupPLpBYqjoTS_LwDyqBSxxAfWYdam?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Destino y fuego</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1KphY9B3KQyr2OO76C4IrSjkvDxqdPLHG?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyE8-ZNVDBzbbz3eeqCKDktMvl1ZA1n5bcxA3H3WY0a7Ui9EnINWKQRawgmOlQmVMrdnuZX9y3kveGQR7p6mVn6KxsO8TlaXtFzBeAS5SquWWO_BE12baGQU6p8BatWewKg-hsHQTWnZLT/s1600/culpables.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1KphY9B3KQyr2OO76C4IrSjkvDxqdPLHG?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Culpable</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1CzB7FzdidXsPe_qd70up-05PGXy6p3c8?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.ytimg.com/vi/_ZpuUjtlrOY/maxresdefault.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1CzB7FzdidXsPe_qd70up-05PGXy6p3c8?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Criminal</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17P2oAQc1jNpmtiAJkrAQWedJGm0dbz_F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn2.buscalibre.com/fit-in/360x360/aa/96/aa96616163f9c1199c3a2ab9b6bc1e3f.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17P2oAQc1jNpmtiAJkrAQWedJGm0dbz_F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía: Corazón</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1HhoUxHVv4jGN0CqX-fqe0cLrk-XZdh5U?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://assets.penguinrandomhouse.com/series-images/series-THH-triad.png" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HhoUxHVv4jGN0CqX-fqe0cLrk-XZdh5U?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía hermanos Hidalgos.</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1IWESOmCilXiHFF1NIJZQLc3h-oNiH86Q?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.ytimg.com/vi/XpXbVFRHSqQ/maxresdefault.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1IWESOmCilXiHFF1NIJZQLc3h-oNiH86Q?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Trilogía del rey</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1tOV_5-PRJEdyyn5REo3Aqlvu2gf3rUKa?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn2.buscalibre.com/fit-in/360x360/c7/99/c799fabc387f3cd223dfc0d09d8359d4.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1tOV_5-PRJEdyyn5REo3Aqlvu2gf3rUKa?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Tres coronas oscuras 👑</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1EirKuxsBCqtW9SaopGkyUMtwlQx6dXZn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpYIx0DJooHYw5c-yT2DyTOvz9cYvM7dUjEg&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1EirKuxsBCqtW9SaopGkyUMtwlQx6dXZn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Terror Asylum</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1qjLyEPBW2via7wG_zK5sgU8BKmPMEWU0?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw target="_blank"><img src="https://hips.hearstapps.com/hmg-prod/images/stephenking-index-1596489768.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1qjLyEPBW2via7wG_zK5sgU8BKmPMEWU0?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Stephen king</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1vZ6QeYOfGr5CEg-yZtoT3pdq8EMr9M98?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUSiWGFoxXlIunxkLWXJtzbfEc90S8AKCNw&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1vZ6QeYOfGr5CEg-yZtoT3pdq8EMr9M98?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Sombra y hueso</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1wvWqnCHX9WaWkSVRA6GTefigG1lmto0F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOhouxinhsYYMvBLTveoHQVw6afWgIRWfqQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1wvWqnCHX9WaWkSVRA6GTefigG1lmto0F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Seis de cuervos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1vFB2icijNuL50GqafwYVcvgOmShBg64w?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn3.buscalibre.com/fit-in/360x360/a6/0f/a60f1313d0d0d6ef69d1448902c96413.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1vFB2icijNuL50GqafwYVcvgOmShBg64w?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Twisted</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1CqVZ4DYK333uib9PONikPIE1WHRLvYDm?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.pinimg.com/236x/a6/78/e7/a678e79d3e4b90f0aa1fdc15bca6108b.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1CqVZ4DYK333uib9PONikPIE1WHRLvYDm?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Never after dark romance</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1J-6ynWTG6kTm0mX92HB71M4AO4Dnl3In?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://pbs.twimg.com/profile_images/592309590911545344/8gUNR1kT_400x400.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1J-6ynWTG6kTm0mX92HB71M4AO4Dnl3In?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Lux</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1vCuwN5z1qZGkt8jqzy11KvPBG3LrLxAU?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/81Kz37oUirL._CLa%7C2823,2475%7C81EUR28AMDL.jpg,81j4rp-ta6L.jpg%7C0,0,1283,2475+1540,0,1283,2475+641,0,1540,2475_._SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1vCuwN5z1qZGkt8jqzy11KvPBG3LrLxAU?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Las novias de los nagas</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Iwai6AJzPARCODtycsWa3C7H7XQl0ACU?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_Ss5ShcygaNYouZqdHlZtFlAdFm6lZvUaQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Iwai6AJzPARCODtycsWa3C7H7XQl0ACU?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: La reina roja ❤️</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17S6oiO_Ao4YB1_JD5vR440aDquwARc89?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://editorialvanir.com/tienda2/458-large_default/pack-la-orden-de-cain-6.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17S6oiO_Ao4YB1_JD5vR440aDquwARc89?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: La orden de caín</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1HmyzGiMwXLUzoZ8IAH5vjMVsIzeYuLiE?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://cadabrabooks.com/cdn/shop/articles/image_c58c2475-ea4a-4367-8472-bf51ff130100_1024x1024.png?v=1672186907" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HmyzGiMwXLUzoZ8IAH5vjMVsIzeYuLiE?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: La escuela del bien y del mal</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/14scFwfqM32VCLWTIzNXHmaW_toEeZDib?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://1.bp.blogspot.com/-yS2cfCXbxRw/YPe0CPVvGxI/AAAAAAAAOyc/8yzwTGoZPt4lBEHFhWD98PXKOc7KrKOtACLcBGAsYHQ/s1018/el-sendero-del-guardabosques-pedro-urvi-freelibros.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/14scFwfqM32VCLWTIzNXHmaW_toEeZDib?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: El sendero</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1DEKkGoERghYx70zqLEk8uN9IMKjHZFjS?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHyj_KXl3DvcxGuAZUsHT8Zw43mbmhrVzJHg&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1DEKkGoERghYx70zqLEk8uN9IMKjHZFjS?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: El rey de nunca jamás</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1KvSt-UcsnD5kOX6s-yVGPbYngwkHCoUr?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://gyaanstore.com/cdn/shop/files/Howto5WaystoAchieveYourGoalsCarouselInstagramPost_64.jpg?v=1693574862" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1KvSt-UcsnD5kOX6s-yVGPbYngwkHCoUr?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Dark verse</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1EhuJ6nz6Htb7U03x_Beo-mp8mbyR4EO-?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/61MMzBnZTqL._AC_UF894,1000_QL80_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1EhuJ6nz6Htb7U03x_Beo-mp8mbyR4EO-?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga: Dark Olympus</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Hu25vL6DqCMKPNWNkpT16koGYlsMTxIn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://pbs.twimg.com/media/FDFsgxxVQAI5e2F.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Hu25vL6DqCMKPNWNkpT16koGYlsMTxIn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga meses a tu lado</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1IXcEeXtViPMtzKZYSSYziFjIqQt7_j7B?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://http2.mlstatic.com/D_NQ_NP_680466-MLA54985552062_052023-O.webp" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1IXcEeXtViPMtzKZYSSYziFjIqQt7_j7B?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga darks</a>
+				</div>
+
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1HZVJRnTwzCSMzY4yPnrOm02cPf4_mj7W?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLcFVg7Sc-tleH_1SOfPE_p3MDQVDcbi8c_g&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HZVJRnTwzCSMzY4yPnrOm02cPf4_mj7W?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga crepúsculo</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1I0dTs6rxZUVfhSrcLo5px_ZRUa982A0c?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjuabcSjq-yDb8nK02_cnr9fLQlkhQS7tJIA&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1I0dTs6rxZUVfhSrcLo5px_ZRUa982A0c?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Saga Boulevard</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Hlte3rswnTKOyiQK7jdB7RrqKtTgEBz9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyn_Q_ONeuxmb1g30xjg65EIWsjnM15ED7vA&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Hlte3rswnTKOyiQK7jdB7RrqKtTgEBz9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Rey de lobos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1sYR_5RuHv866NlVoxdhFb-8tQxGqzQ0l?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.pinimg.com/originals/cf/2e/68/cf2e686d6cf2cf6704f411b2e9c5e1ed.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1sYR_5RuHv866NlVoxdhFb-8tQxGqzQ0l?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Reinos malditos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1wIk0kVrr87z25lbkCKnqkGTvBBrTVZ9r?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.pinimg.com/originals/de/b7/5e/deb75e7f91d2cb1d0444f1b8cff5053b.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1wIk0kVrr87z25lbkCKnqkGTvBBrTVZ9r?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Princesa de cenizas</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1y0otITH_HUmlNkziau2RauG4T08zUpoA?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSVVNWJcWfNVtyBy4LCNlWTEk4jkdsUrP-Mg&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1y0otITH_HUmlNkziau2RauG4T08zUpoA?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Pídeme lo que quieras</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pSYo8maWM2NpxMW59jw7ArJpXx7_ODaD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://img.wattpad.com/3f94380219c9e015b93a852e5403e18f2c9a279f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f57754230336c7167614b342d31513d3d2d3939303236373731322e313634643162636335333237636637323133393038393034383935322e6a7067?s=fit&w=720&h=720" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pSYo8maWM2NpxMW59jw7ArJpXx7_ODaD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Perfectos mentirosos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17faLpIK6dacs-gM7-w6LuaiwxBGf4tFf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://grupovierci.brightspotcdn.com/dims4/default/1a343fe/2147483647/strip/true/crop/1500x845+0+110/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fadjuntos%2F161%2Fimagenes%2F011%2F196%2F0011196504.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17faLpIK6dacs-gM7-w6LuaiwxBGf4tFf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Percy Jackson ⚡</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1q9n57PaZmYKVpfvEwinxYKhqFIqFlNU3?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn3.buscalibre.com/fit-in/360x360/e4/64/e46429de47b2703e910d71f868b3dafe.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1q9n57PaZmYKVpfvEwinxYKhqFIqFlNU3?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Penélope Douglas</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1DBLNIpvzCDrQ9Y6MK91Giun7wIzNDJq1?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/71ltWTr32xL._UX250_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1DBLNIpvzCDrQ9Y6MK91Giun7wIzNDJq1?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Halloween 🎃</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1r7oCZQJJgJghRGq909MmGRPgeeHMJRtX?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/369DACE12E74B74DBE0B0BFB89D5C946BC174531C410D91666FD65B37A8A2495/scale?width=1200&aspectRatio=1.78&format=webp" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1r7oCZQJJgJghRGq909MmGRPgeeHMJRtX?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Maze Runner</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1wt-42g3-i0Ug4Z0p62Pf7EBAdwtv4BQI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://img2.rtve.es/im/5662740/?w=900" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1wt-42g3-i0Ug4Z0p62Pf7EBAdwtv4BQI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Mario Benedetti </a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Hk-xl63OIqN3nvWkB0vr1XoawI0fmVzI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/51qU9tFgHEL._CLa%7C573%2C500%7C51PUwuy1YxL.jpg%2C51GNZShJSlL.jpg%7C0%2C0%2C260%2C500%2B313%2C0%2C260%2C500%2B130%2C0%2C313%2C500__SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Hk-xl63OIqN3nvWkB0vr1XoawI0fmVzI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Mafe dark</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1uZY5eyWySyH1jX-lbNWvX-qpv8_7kTLt?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VAeSDW1fAesuXMRFt4jBDngIHa83KZgMjQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1uZY5eyWySyH1jX-lbNWvX-qpv8_7kTLt?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Los ojos de la princesa</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pVldfJAjzWEQA6gx53u9oOyDVPq0BZtN?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/01/88/0188ecb47c8f0daea8b128a8779e1b98.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pVldfJAjzWEQA6gx53u9oOyDVPq0BZtN?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Los Juegos del hambre</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1CyqmiK9g8jXcLAdBvububN9uA2eaoY2X?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn2.buscalibre.com/fit-in/360x360/10/51/105129783b76eb978cb93753fcfd59d1.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1CyqmiK9g8jXcLAdBvububN9uA2eaoY2X?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Hay quienes eligen la oscuridad</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1Pi3gEMj5wYssT0p2left_jtA788KCaA5?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://clarynathanwill.com/wp-content/uploads/2022/03/277667831_3225445171113890_1147632482095212400_n.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1Pi3gEMj5wYssT0p2left_jtA788KCaA5?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">K. Webster</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17Q7LnNWd-yhAacMBRfnyN5r3rNLzVrFL?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://blog.iberolibrerias.com/wp-content/uploads/2022/12/destacado-leer-libros-games-of-thrones.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17Q7LnNWd-yhAacMBRfnyN5r3rNLzVrFL?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Juego de tronos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1ph2lIMxOUcryAeDgehKiP4RUu_3LdiNb?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/regionalbooks/n/i/k/haunting-adeline-hunting-adeline-original-imagqkqnp52fkbwp.jpeg?q=90&crop=false" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1ph2lIMxOUcryAeDgehKiP4RUu_3LdiNb?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Haunting Adeline</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1rdEjfUWWpqCYKntjOt0l91LHEcxbZsOL?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0vev9wWgHV9jGgrUqk46ZJ1tLgo0kTa8QA&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1rdEjfUWWpqCYKntjOt0l91LHEcxbZsOL?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Habitantes del aire</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1aJzjejtM71W1LkSkmbIxYQr8XwYJFVpH?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToja1uMvFdOS3yyXJ1BSzzwTn73ymeTPzz9g&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1aJzjejtM71W1LkSkmbIxYQr8XwYJFVpH?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Five Nights a Freddy's</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1prHxELaKJquOzahrvJzrZUnsaY6EJkL5?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://www.crisol.com.pe/media/catalog/product/cache/cf84e6047db2ba7f2d5c381080c69ffe/9/7/9786124883705_1.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1prHxELaKJquOzahrvJzrZUnsaY6EJkL5?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Erase una vez</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1tOGWNUiPX3vu-SJFsnPYS8JMwxlOH3xp?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/81FvkRqzRmL._CLa%7C2566,2207%7C81hjDPPK5BL.jpg,81H8InJUXNL.jpg%7C0,0,1166,2207+1400,0,1166,2207+583,0,1400,2207_._SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1tOGWNUiPX3vu-SJFsnPYS8JMwxlOH3xp?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">El reino de los malditos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1qbDHvuavschnvPS8gFkZxhQ3vrSL6w4A?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://assets.lectulandia.com/b/ab/Dot%20Hutchison/El%20jardin%20de%20las%20mariposas%20(1)/small.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1qbDHvuavschnvPS8gFkZxhQ3vrSL6w4A?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">El coleccionista</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1piWLZF_Cor7_7PxmFWjRhTfyS69rzLcI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXFo-ztx9RabVn0ELoj_2zUIjiWeePARkzw&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1piWLZF_Cor7_7PxmFWjRhTfyS69rzLcI?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">El brujo</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1zzu03iveWH9kbWjYaLORNycOOXIKEqR6?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://http2.mlstatic.com/D_Q_NP_2X_746705-MPE78368970191_082024-T.webp" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1zzu03iveWH9kbWjYaLORNycOOXIKEqR6?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Diarios</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1sxoCiBqSz3qLY8NMZ2CH_m24njJrFv7F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/32/58/3258d6cbabde6a68b5f03535d77b1526.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1sxoCiBqSz3qLY8NMZ2CH_m24njJrFv7F?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Deja que ocurra</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/12ZoZE3X8xDseok0nHWNZWRMvXXogvmob?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.pinimg.com/736x/b8/06/da/b806da2948eafa0afb50382a0a63d7ef.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/12ZoZE3X8xDseok0nHWNZWRMvXXogvmob?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">DECENDIENTES</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1s9s8kpaOf_IzuG3SB3xV22lwowDUeDFn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbOZRkZRrO9JfoUKDKWKEfs_VgbIBTpwtaNQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1s9s8kpaOf_IzuG3SB3xV22lwowDUeDFn?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">De sangre y cenizas</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/11EJQudd_FDw0vEwo-ogZbofxKEXUN-_n?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-LKUyHW2D-cbmiblHVrWx6TQNjGvrBudVA&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/11EJQudd_FDw0vEwo-ogZbofxKEXUN-_n?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Crónicas de vampiro</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1r3YKsC-VRFLl_mhbpNGl53Yrh09T32rR?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn2.buscalibre.com/fit-in/360x360/b6/e8/b6e857a7ad2be27c3cb1d082da189c82.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1r3YKsC-VRFLl_mhbpNGl53Yrh09T32rR?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Craver</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1DPShf7UxsuI0WWDH9aCzqTdeq3Cl5Akc?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWlvws27fKeSquWDZY7xoi2HFueMLDwB4AaFtS4sDWpYRpH-9aaxxR8InGhULVgf_kXdGdVu4Zqff6Ux2UMdSCSatYYQWGf_ozpkMxxCb9WxxHB_cOAJT03b3o_yx8_XwGLP__HVaLkh4/s1600/ElFantasmaDeLaOpera.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1DPShf7UxsuI0WWDH9aCzqTdeq3Cl5Akc?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Clásicos góticos</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pVt-5ylvREIdY9lZjGbseZSgkDUhiJk8?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/516eiTEf-5L._CLa%7C588%2C500%7C515C2%2BUz6YL.jpg%2C51Pz43fiYJL.jpg%7C0%2C0%2C267%2C500%2B321%2C0%2C267%2C500%2B133%2C0%2C321%2C500__SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pVt-5ylvREIdY9lZjGbseZSgkDUhiJk8?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Ciudad media luna</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1q9GAPB-WSLmEaOMT7qfHPH5444rfpOKR?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://cadabrabooks.com/cdn/shop/articles/cazadores-de-sombras-9-libros-cassandra-clare-pdf-epub-D_NQ_NP_738253-MPE28379560969_102018-F_320x.jpg?v=1632359223" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1q9GAPB-WSLmEaOMT7qfHPH5444rfpOKR?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Cazadores de sombras</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pa1Wyh2pqrjIeAaW-61gIAKVhGKgHbuG?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuV8ivpOOhHNHDvIcLU5BnOTqx-V2O5yG2mA&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pa1Wyh2pqrjIeAaW-61gIAKVhGKgHbuG?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Cazadores de brujas</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1p_O-eVwuX3jk-yYmBWbHprjh_-4YNFCX?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/6f/b6/6fb6fbe59dd6ae06c182a16fc0a1e9ad.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1p_O-eVwuX3jk-yYmBWbHprjh_-4YNFCX?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Bridgerton</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1DMl9DEN7dYtOIQ8R0DEx3KnpqtvfY5oD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://pbs.twimg.com/media/GEdLmYjWkAAZke6.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1DMl9DEN7dYtOIQ8R0DEx3KnpqtvfY5oD?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Ben Alderson</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/17f8t4WXruA-sSiBX7crZokQTfk8tjVmV?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://i.pinimg.com/736x/48/38/c7/4838c7786705255c9467d28847b414ca.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/17f8t4WXruA-sSiBX7crZokQTfk8tjVmV?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Biología: Nerd</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1HVsNdH3nA-_Wgd8G1iL15-EfZG1O4mO2?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/61qOgqFrL3L._AC_UF1000,1000_QL80_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1HVsNdH3nA-_Wgd8G1iL15-EfZG1O4mO2?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Biología: Hideaway</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1ILLnXaCRM5fIgxOo29YZUcbyNSJXg53m?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwo8CpZJaRc7RoquqAZWAJf3t9_r485J7e1SIc1WXPM9ByzL4NYsBtJw4XIbPnz5B-570&usqp=CAU" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1ILLnXaCRM5fIgxOo29YZUcbyNSJXg53m?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Biologia strange</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1IBYZb75IfkdxbCmk5e-D62zx2kTa3NL6?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQBe9zbX8e2S9tVQ5BWkSxLAiebL7C26oXtQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1IBYZb75IfkdxbCmk5e-D62zx2kTa3NL6?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Bilogía extraños</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1sAfl9vJz0vAmMWpu8VPEoRVp5Qp8-mK_?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNz7ESSikn5HaHnBXqWF-9Dt_4MLW8Wp-HzQ&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1sAfl9vJz0vAmMWpu8VPEoRVp5Qp8-mK_?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">BG. 5</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1trIHJwkZxuZ-ujnQDkkIe_cGVS-R4V90?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/I/81wE3xX-BhL._CLa%7C1980,1737%7C81Or6owRJnL.jpg,71-WHe8X0oL.jpg%7C0,0,900,1737+1080,0,900,1737+450,0,1080,1737_._SY200_.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1trIHJwkZxuZ-ujnQDkkIe_cGVS-R4V90?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Beneath The mask</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pc7vVVtSZcWyMlKn_SMhCEwIjr30QVV9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuyufVvbkW-5MhrBwuFXVXCqBN7gwf6M-Nzw&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pc7vVVtSZcWyMlKn_SMhCEwIjr30QVV9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Belladonna</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1PakdtuKMYwcIndqdMGPKmc24UlK4hi52?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/dc/16/dc16626b0d77e70dd71816bf530b7119.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1PakdtuKMYwcIndqdMGPKmc24UlK4hi52?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Ayuda y crecimiento personal</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pvJc2BM_OYUxBr-VaJC98Pl8CUcE5Dx_?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2LJTkZ6KtzgxHILNVsdEGyUt-57DmS21_Q&s" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pvJc2BM_OYUxBr-VaJC98Pl8CUcE5Dx_?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Auto-concluido</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1qj_naWM6bhxO1PbYAAZx28bSCXlF2Mr9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/03aab70d-57f7-4a07-894d-47440eda0d25.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1qj_naWM6bhxO1PbYAAZx28bSCXlF2Mr9?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Asesinato para principiantes</a>
+				</div>
+
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1PYyeLnzm0jTbQnLhJmVcOdv0NymFglCf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwvkmadyuc4vEpH3WBjTZPhnqT1hGh0U1AgYAA9_QNxFABqZiXJDlo90t5AhtDK5_-obWCBq_4-rsHBO62ZPbm44pehUZb42jOtJtqWn8SxJTeZgZ7sCy2D4MG1b2dhRtNjOWdcQVPJ1Q/w1200-h630-p-k-no-nu/apocalipsisz.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1PYyeLnzm0jTbQnLhJmVcOdv0NymFglCf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Apocalipsis</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pzImexxVsWFCDtrY2vwLMCOOJv3QIbcO?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://assets.penguinrandomhouse.com/wp-content/uploads/2023/10/27104936/PRH_Site_1200x628-1.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pzImexxVsWFCDtrY2vwLMCOOJv3QIbcO?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Aliz hazelwood</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pQg5GGUrEig6OF5DkfcW-0HhFEXQg8iO?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/97/3a/973a9aa17987c4da4fc07bdcc8130b97.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pQg5GGUrEig6OF5DkfcW-0HhFEXQg8iO?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Alas de sangre</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1y26i095ZoOAgDRK9tSZxsgmM6W69Gwq4?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://images.cdn1.buscalibre.com/fit-in/360x360/92/95/9295d411ec4a229e0183b62311beef68.jpg" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1y26i095ZoOAgDRK9tSZxsgmM6W69Gwq4?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">After</a>
+				</div>
+				<div class="product-item" category="audifonos">
+					<a href="https://drive.google.com/drive/folders/1pSQaCxfvbf9iSjpWWFDT5u5ozlU8J1uf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank"><img src="https://librorecomendable.com/wp-content/uploads/saga_acotar_orden.webp" alt="" ></a>
+					<a href="https://drive.google.com/drive/folders/1pSQaCxfvbf9iSjpWWFDT5u5ozlU8J1uf?fbclid=IwZXh0bgNhZW0CMTAAAR36zxirUjbw64LCpqbBnfQ4VOTROglT4FS-dCv22jAOSpwfIwe1Kl_GC8g_aem_OGTyK6melwz9fpST4kEcBw" target="_blank" class="loco">Acotar</a>
+				</div>
+				<!--<div class="product-item" category="audifonos">
+					<a href="" target="_blank"><img src="" alt="" ></a>
+					<a href="" target="_blank" class="loco"></a>
+				</div>-->
+
+
+				
+			</section>
+		</div>
+	</div>
+
+</body>
+</html>
